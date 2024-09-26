@@ -1,0 +1,155 @@
+.encabezado {
+    display: flex;
+    padding: 1em 2em;
+    background-color: #2C2C2C;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tituloContainer {
+    display: flex;
+    align-items: center;
+}
+
+.encabezadoContainer {
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+    font-size: large;
+}
+
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  
+  header a:visited {
+    color: #FFFFFF;
+  }
+  
+  header a:hover {
+    color: #FFCC00; /* Color de hover para enlaces */
+  }
+
+.encabezadoTitle {
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 10px;
+    justify-content: flex-start;
+    color: #FFFFFF;
+
+}
+
+.logoEncabezado {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+body {
+    background-color: #1C1C1C; /* Fondo Oscuro Profundo */
+    color: #B3B3B3;
+}
+
+
+.movieContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    border: 1px #ccc;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho de cada tarjeta */
+    text-align: center;
+}
+
+.movie-poster {
+    width: 300px; 
+    height: 450px; 
+    object-fit: cover;
+}
+  
+  
+.movie-info {
+    padding: 15px;
+}
+  
+.movie-info a {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+}
+
+.movie-info .movie-title:hover {
+    text-decoration: underline;
+    font-size: 20px;
+}
+  
+.movie-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: black;
+}
+
+.movie-details {
+    background-color: #e0f7fa; 
+    padding: 10px; 
+    border-radius: 4px; 
+}
+
+.rating-box {
+    background-color: #ffecb3;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px;
+    color: #003366;
+}
+
+
+
+
+
+/* CONTENIDO DEL FOOTER */
+footer {
+    background-color: #333;
+    color: #F1F6F9;
+    padding: 2em;
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 2em;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-info p, .footer-contact p {
+    margin: 0.5em 0;
+  }
+  
+  .footer-info, .footer-links, .footer-contact {
+    margin-bottom: 1em;
+  }
+  
+  .footer-links a, .footer-contact a {
+    color: #F1F6F9;
+    text-decoration: none;
+    margin: 0 0.5em;
+  }
+  
+  .footer-links a:hover, .footer-contact a:hover {
+    color: #ff6f00; /* Color de hover para enlaces */
+  }
