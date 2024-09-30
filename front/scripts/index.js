@@ -1,5 +1,9 @@
 const movieContainer = document.querySelector('.movieContainer');
 
+$.get("https://students-api.up.railway.app/movies", (data) => {
+  data.forEach(createMovieCard);
+})
+
 //Funcion para crear cada tarjeta
 function createMovieCard(movie) {
   // Crear los elementos principales
@@ -54,4 +58,3 @@ function createMovieCard(movie) {
   movieContainer.appendChild(card);
 }
 
-tempData.forEach(createMovieCard);
