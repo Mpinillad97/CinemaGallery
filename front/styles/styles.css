@@ -1,4 +1,4 @@
-.encabezado {
+/* .encabezado {
     display: flex;
     padding: 1em 2em;
     background-color: #2C2C2C;
@@ -29,7 +29,7 @@ header a {
   
   header a:hover {
     color: #FFCC00; /* Color de hover para enlaces */
-  }
+  /* } */
 
 .encabezadoTitle {
     font-size: large;
@@ -45,7 +45,7 @@ header a {
     width: 40px;
     height: auto;
     margin-right: 10px;
-}
+} */
 
 body {
     background-color: #1C1C1C; /* Fondo Oscuro Profundo */
