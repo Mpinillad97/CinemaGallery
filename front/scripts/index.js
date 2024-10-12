@@ -1,8 +1,16 @@
 const createMovieCard = require("./createMovieCard");
+const axios = require("axios");
 
-$.get("https://students-api.up.railway.app/movies", (data) => {
-  data.forEach(createMovieCard);
-})
+const fetchData = async () => {
+  try {
+    const data = await axios.get("https://students-api.up.railway.app/movies")
+    Response.data.forEach(createMovieCard);
+  } catch (err) {
+    alert("Pagina en mantenimiento, por favor vuelva mas tarde.")
+  }
+}
+
+fetchData();
 
 
 
