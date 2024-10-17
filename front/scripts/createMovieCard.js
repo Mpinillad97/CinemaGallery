@@ -54,4 +54,4 @@ function createMovieCard(movie) {
     movieContainer.appendChild(card);
   }
 
-module.exports = createMovieCard
+module.exports = { createMovieCard }
