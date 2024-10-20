@@ -1,7 +1,12 @@
-const testController = (req, res) => {
-    res.status(200).send("Próximamente estarán disponibles los datos de las peliculas");
-};
+const movieService = require("../services/movieService");
 
 module.exports = {
-    testController,
+    getAllMovies: async (req, res) => {
+        try {
+            const movies = await movieService.getMovies();
+            res.json(movies);
+        } catch (error) {
+            res.status(500).send("Error al obtener las películas");
+        }
+    },
 }
