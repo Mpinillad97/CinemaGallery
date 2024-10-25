@@ -103,3 +103,13 @@ footer {
   .footer-links a:hover, .footer-contact a:hover {
     color: #ff6f00; /* Color de hover para enlaces */
   }
+
+  /* Estilos pagina estatica */
+  .custom-img {
+    width: 70%; 
+    height: 250px; 
+    object-fit: cover; 
+}
+
+
+
