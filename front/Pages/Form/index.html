@@ -39,7 +39,7 @@
               <form>
                 <!-- Título -->
                 <div class="mb-3">
-                  <label for="title" class="form-label">Movie Title</label>
+                  <label for="title" class="form-label">Movie  Title</label>
                   <input id="title" name="title" class="form-control" type="text" aria-label="Movie Title" required>
                 </div>
       
@@ -95,6 +95,10 @@
                       <label class="form-check-label" for="romance">Romance</label>
                     </div>
                     <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="Adventure" value="Adventure">
+                      <label class="form-check-label" for="romance">Adventure</label>
+                    </div>
+                    <div class="form-check form-check-inline">
                       <input class="form-check-input" type="checkbox" id="thriller" value="Thriller">
                       <label class="form-check-label" for="thriller">Thriller</label>
                     </div>
@@ -111,15 +115,15 @@
                       <label class="form-check-label" for="mystery">Mystery</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="other" value="Other">
-                      <label class="form-check-label" for="other">Other</label>
+                      <input class="form-check-input" type="checkbox" id="Fantasy" value="Fantasy">
+                      <label class="form-check-label" for="other">Fantasy</label>
                     </div>
                 </div>                  
                 
                 <!-- Rating -->
                 <div class="mb-3">
-                    <label for="rating" class="form-label">Rating</label>
-                    <input id="rating" name="rating" class="form-control" type="number" min="0" max="10" step="0.1" aria-label="Movie Rating" required>
+                    <label for="rate" class="form-label">Rate</label>
+                    <input id="rate" name="rate" class="form-control" type="number" min="0" max="10" step="0.1" aria-label="Movie Rate" required>
                 </div>
 
                 <!-- URL del Póster -->
@@ -131,7 +135,7 @@
                 <!-- Botones -->
                 <div style=" display: flex; justify-content: space-between;">
                     <button type="submit" class="btn btn-success">Enviar <i class="fas fa-paper-plane"></i></button>
-                    <button type="reset" class="btn btn-outline-secondary">Limpiar <i class="fas fa-broom"></i></button>
+                    <button type="reset" id="clearForm" class="btn btn-outline-secondary">Limpiar <i class="fas fa-broom"></i></button>
                 </div>
               </form>
             </section>
