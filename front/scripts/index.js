@@ -1,5 +1,6 @@
 const { createMovieCard } = require("./createMovieCard");
 const axios = require("axios");
+const { tempData } = require("./tempData")
 
 const fetchData = async () => {
   try {
@@ -7,7 +8,8 @@ const fetchData = async () => {
     const movies = response.data.data; 
     movies.forEach(createMovieCard);
   } catch (err) {
-    alert("Página en mantenimiento, por favor vuelva más tarde.");
+    alert("Página en mantenimiento, mostrando peliculas de muestra.");
+    tempData.forEach(createMovieCard);
   }
 }
 
