@@ -1,14 +1,14 @@
-const movieService = require("../services/movieService");
+const { getMovieServices, createMovieService } = require("../services/movieService");
 
-const getMoviesController = async (req, res) => {
-    const respuesta = await movieService.getMovieServices()
+const getMoviesController = (req, res) => {
+    const respuesta = getMovieServices()
     res.status(200).json({
         message: "Aqui estan todas las peliculas",
         data: respuesta
     })
 }
 
-createMoviesController = (req, res) => {
+const createMoviesController = (req, res) => {
     const respuesta = createMovieService(req.body)
     res.status(201).json({
         message: respuesta,

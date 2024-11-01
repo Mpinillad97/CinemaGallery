@@ -60,3 +60,8 @@ const tempData = [
       "https://image.tmdb.org/t/p/original/2iuVrtC5IpwLtSFSgkIIIKLs0Zq.jpg",
   }
 ];
+
+
+module.exports = {
+  tempData,
+}
