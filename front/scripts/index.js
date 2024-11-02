@@ -8,7 +8,7 @@ const fetchData = async () => {
     const movies = response.data.data; 
     movies.forEach(createMovieCard);
   } catch (err) {
-    alert("Página en mantenimiento, mostrando peliculas de muestra.");
+    alert("Página en mantenimiento, mostrando peliculas de respaldo.");
     tempData.forEach(createMovieCard);
   }
 }

@@ -10,11 +10,26 @@ const movieObject = {
         type: Number,
         required: true
     },
-    director: String,
-    duration: String, 
-    genre: [String],
-    rate: Number,
-    poster: String
+    director: {
+        type: String,
+        required: true
+    },
+    duration: {
+        type: String,
+        required: true
+    }, 
+    genre: {
+        type: [String],
+        required: true
+    },
+    rate: {
+        type: Number,
+        required: true
+    },
+    poster: {
+        type: String,
+        required: true
+    }
 }
 
 

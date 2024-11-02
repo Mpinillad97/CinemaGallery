@@ -1,11 +1,18 @@
 const { getMovieServices, createMovieService } = require("../services/movieService");
 
-const getMoviesController = (req, res) => {
-    const respuesta = getMovieServices()
-    res.status(200).json({
+const getMoviesController = async (req, res) => {
+    try {
+        const respuesta = await getMovieServices()
+        res.status(200).json({
         message: "Aqui estan todas las peliculas",
         data: respuesta
     })
+    } catch (error) {
+        res.status(500).json({
+            message: error.message
+        })
+    }
+    
 }
 
 const createMoviesController = (req, res) => {
