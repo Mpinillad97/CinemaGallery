@@ -6,8 +6,8 @@ const getMovieServices = async () => {
 };
 
 const createMovieService = async (movie) => {
-    const newMovie = new Movie(movie);
-    return await newMovie.save()
+    const newMovie = await Movie.create(movie);
+    return newMovie;
 }
 
 
