@@ -15,12 +15,19 @@ const getMoviesController = async (req, res) => {
     
 }
 
-const createMoviesController = (req, res) => {
-    const respuesta = createMovieService(req.body)
-    res.status(201).json({
+const createMoviesController = async (req, res) => {
+    try {
+        const respuesta = await createMovieService(req.body)
+        res.status(201).json({
         message: respuesta,
         data: req.body
-    })
+        })
+    } catch (error) {
+        res.status(500).json({
+            message: "Error al crear la pelicula"
+        })
+    }
+    
 }
 
 
