@@ -1,6 +1,9 @@
 const { createMovieCard } = require("./createMovieCard");
 const axios = require("axios");
 const { tempData } = require("./tempData")
+const { formJs } = require("./form")
+
+const pathname = location.pathname;
 
 const fetchData = async () => {
   try {
@@ -13,7 +16,10 @@ const fetchData = async () => {
   }
 }
 
-fetchData();
+if (pathname === "/index.html") fetchData();
+if (pathname === "/pages/form/index.html") formJs();
+
+
 
 
 

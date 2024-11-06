@@ -1,3 +1,7 @@
+const axios = require("axios");
+
+
+const formJs = () => {
 const form = document.querySelector("form");
 const clearForm = document.querySelector("#clearForm");
 
@@ -24,10 +28,25 @@ form.addEventListener("submit", (e) => {
             return
         }
     }
-    console.log(objetoMovie);
+    axios.post("http://localhost:3000/movies", objetoMovie)
+        .then((respuesta) => {
+            alert("Pelicula creada con éxito");
+            form.reset();
+        })
+        .catch((error) => {
+            alert("Error al crear la pelicula")  
+        })
+
+
+    
 })
 
 clearForm.addEventListener("click", () => {
     form.reset()
 })
 
+}
+
+module.exports = {
+    formJs
+}
