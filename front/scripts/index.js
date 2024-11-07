@@ -16,8 +16,8 @@ const fetchData = async () => {
   }
 }
 
-if (pathname === "/index.html") fetchData();
-if (pathname === "/pages/form/index.html") formJs();
+if (pathname.includes("/index") || pathname === "/front" || pathname === "/") fetchData();
+if (pathname === "/pages/Form/index.html" || pathname.includes("/form")) formJs();
 
 
 
