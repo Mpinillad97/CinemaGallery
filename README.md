@@ -12,11 +12,15 @@ This project is a simple yet powerful backend API designed to manage a collectio
 
 ## 🛠️ Technologies Used
 - **Node.js**: Server-side JavaScript runtime environment.
+- **Bootstrap**: Frontend framework for building responsive and mobile-first web pages.
 - **Express.js**: Web framework for Node.js to handle routing and HTTP requests.
 - **MongoDB**: NoSQL database to store movie information.
 - **Mongoose**: ODM (Object Data Modeling) library for MongoDB and Node.js.
 - **Jest**: Testing framework to ensure API functionality.
 - **dotenv**: Secure handling of environment variables.
+- **JavaScript**: Core programming language used for both backend and frontend logic.
+- **HTML**: Markup language used for structuring the web pages.
+- **CSS**: Styling language for designing the appearance of the web pages.
 
 ## 🔧 Installation
 To get this project up and running locally, follow these steps:
@@ -67,6 +71,10 @@ Este proyecto es una API backend simple pero poderosa, diseñada para gestionar 
 
 ## 🛠️ Tecnologías Utilizadas
 - **Node.js:** Entorno de ejecución de JavaScript en el servidor.
+- **Bootstrap**: Framework de frontend para construir páginas web responsivas y móviles.
+- **JavaScript**: Lenguaje de programación principal utilizado tanto en el backend como en el frontend.
+- **HTML**: Lenguaje de marcado utilizado para estructurar las páginas web.
+- **CSS**: Lenguaje de estilo para diseñar la apariencia de las páginas web.
 - **Express.js:** Framework web para Node.js para manejar el enrutamiento y las solicitudes HTTP.
 - **MongoDB:** Base de datos NoSQL para almacenar la información de las películas.
 - **Mongoose:** Biblioteca ODM (Modelado de Datos de Objetos) para MongoDB y Node.js.
